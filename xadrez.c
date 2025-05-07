@@ -4,29 +4,55 @@
 // Este código inicial serve como base para o desenvolvimento do sistema de movimentação das peças de xadrez.
 // O objetivo é utilizar estruturas de repetição e funções para determinar os limites de movimentação dentro do jogo.
 
-int main() {
-    // Nível Novato - Movimentação das Peças
-    // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
+int main()
+{
+    // Mostra na tela que vai começar a movimentação do Bispo
+printf("\n\nMovimentacao Bispo\n\n");
 
-    // Implementação de Movimentação do Bispo
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
+// Cria uma variável chamada movBispo e coloca o valor 5
+int movBispo = 5;
 
-    // Implementação de Movimentação da Torre
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.
+// Faz um laço que repete enquanto movBispo for maior que 0
+do
+{
+    // Mostra que o bispo está indo pra direita
+    printf("Direita\n");
 
-    // Implementação de Movimentação da Rainha
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
+    // Mostra que o bispo está indo pra cima
+    printf("Cima\n");
 
-    // Nível Aventureiro - Movimentação do Cavalo
-    // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
-    // Um loop pode representar a movimentação horizontal e outro vertical.
+    // Tira 1 do valor de movBispo
+    --movBispo;
 
-    // Nível Mestre - Funções Recursivas e Loops Aninhados
-    // Sugestão: Substitua as movimentações das peças por funções recursivas.
-    // Exemplo: Crie uma função recursiva para o movimento do Bispo.
+} while (movBispo > 0); // Repete até que movBispo seja 0
 
-    // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
-    // Inclua o uso de continue e break dentro dos loops.
+// Mostra na tela que vai começar a movimentação da Torre
+printf("\n\nMovimentacao Torre \n\n");
 
-    return 0;
+// Cria uma variável chamada movTorre com o valor 5
+int movTorre = 5;
+
+// Laço for que começa com o valor atual de movTorre e vai até ele ser 0
+for (movTorre; movTorre > 0; movTorre--)
+{
+    // Mostra que a torre está indo pra direita
+    printf("Direita\n");
+}
+
+// Mostra na tela que vai começar a movimentação da Rainha
+printf("\n\nMovimentacao Rainha \n\n");
+
+// Cria uma variável chamada movRainha com o valor 8
+int movRainha = 8;
+
+// Enquanto movRainha for maior que 0, repete o que está dentro
+while (movRainha > 0)
+{
+    // Mostra que a rainha está indo pra esquerda
+    printf("Esquerda\n");
+
+    // Tira 1 do valor de movRainha
+    --movRainha;
+}
+
 }
